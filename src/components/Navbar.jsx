@@ -7,13 +7,13 @@ import { MdFavorite, MdHelp } from 'react-icons/md'
 const Navbar = () => {
     const [nav, setNav] = useState(false)
     return (
-        <div className='max-w-[1640px] max-auto flex justify-between items-center p-4'>
+        <div className='max-w-[1640px] max-auto flex justify-between items-center p-4 bg-blue-500'>
             <div className='flex items-center'>
                 <div onClick={()=> setNav(!nav)} className='cursor-pointer'>
                     <AiOutlineMenu size={30} />
                 </div>
-                <h1 className='text-2xl sm:text-3xl lg:text-4xl px-2'>
-                    Best <span className='font-bold'>Eats</span>
+                <h1 className='text-2xl sm:text-3xl lg:text-4xl px-2 font-bold'>
+                    Food <span className=' bg-yellow-400 text-white'>Express</span>
                 </h1>
                 <div className='hidden lg:flex items-center bg-gray-200 rounded-full p-1 text-[14px]'>
                     <p className='bg-black text-white rounded-full p-2'>Devilery</p>
@@ -26,7 +26,7 @@ const Navbar = () => {
 
             </div>
             {/* Cart Button */}
-            <button className='bg-black text-white hidden md:flex items-center py-2 rounded-full'>
+            <button className='bg-orange-300 text-white hidden md:flex items-center py-2 rounded-full border-orange-300'>
                 <BsFillCartFill size={20} className='mr-2' />Cart
             </button>
 
