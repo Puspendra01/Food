@@ -2,6 +2,7 @@ import React from 'react'
 
 const Hero = () => {
   return (
+    <>
     <div className='max-w-[1640px] mx-auto p-4'>
         <div className='max-h-[615px] relative'>
             {/* Overlay */}
@@ -12,6 +13,7 @@ const Hero = () => {
             <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=600" className='w-full max-h-[615px] object-cover' alt="/" />
         </div>
     </div>
+    </>
   )
 }
 

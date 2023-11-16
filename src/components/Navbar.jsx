@@ -7,7 +7,8 @@ import { MdFavorite, MdHelp } from 'react-icons/md'
 const Navbar = () => {
     const [nav, setNav] = useState(false)
     return (
-        <div className='max-w-[1640px] max-auto flex justify-between items-center p-4 bg-blue-500'>
+        <>
+        <div className='max-w-[1640px] max-auto m-auto flex justify-between items-center p-4 bg-blue-500'>
             <div className='flex items-center'>
                 <div onClick={()=> setNav(!nav)} className='cursor-pointer'>
                     <AiOutlineMenu size={30} />
@@ -73,10 +74,9 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </nav>
-
-
             </div>
         </div>
+        </>
     )
 }
 
