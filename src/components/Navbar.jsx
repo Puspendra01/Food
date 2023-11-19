@@ -14,7 +14,7 @@ const Navbar = () => {
                     <AiOutlineMenu size={30} />
                 </div>
                 <h1 className='text-2xl sm:text-3xl lg:text-4xl px-2 font-bold'>
-                    Food <span className=' bg-yellow-400 text-white'>Express</span>
+                    Food <span className='text-white'>Express</span>
                 </h1>
                 <div className='hidden lg:flex items-center bg-gray-200 rounded-full p-1 text-[14px]'>
                     <p className='bg-black text-white rounded-full p-2'>Devilery</p>
@@ -56,10 +56,11 @@ const Navbar = () => {
                             <FaWallet size={25} className='mr-4'/>
                             Wallet
                         </li>
+                        <a href='/Help'>
                         <li className='text-xl py-4 flex'>
                             <MdHelp size={25} className='mr-4'/>
                             Help
-                        </li>
+                        </li></a>
                         <li className='text-xl py-4 flex'>
                             <AiFillTag size={25} className='mr-4'/>
                             Promotions
