@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Food = () => {
   return (
@@ -34,8 +35,10 @@ const Food = () => {
         </div>
       </div>
       {/* Display Food */}
+      
       <div className='grid grid-cols-2 lg:grid-cols-4 gap-6 pt-4'>
-        <div className='border shadow-lg rounded-lg hover:scale-105 duration-300'>
+        <a href='/details'>
+        <div className='border shadow-lg rounded-lg hover:scale-105 duration-300'>       
           <img src='https://images.pexels.com/photos/6133303/pexels-photo-6133303.jpeg?auto=compress&cs=tinysrgb&w=600' alt='/' className='w-full h-[200px] object-cover rounded-t-lg'/>
           <div className='flex justify-between px-2 pr-4 pt-3 pb-3'>
             <p className='font-bold'>Double Stage Cake</p>
@@ -43,70 +46,7 @@ const Food = () => {
               <span className='bg-orange-500 text-white p-1 rounded-full'>$$$$</span>
             </p>
           </div>
-        </div>
-        <div className='border shadow-lg rounded-lg hover:scale-105 duration-300'>
-          <img src='https://images.pexels.com/photos/6133303/pexels-photo-6133303.jpeg?auto=compress&cs=tinysrgb&w=600' alt='/' className='w-full h-[200px] object-cover rounded-t-lg'/>
-          <div className='flex justify-between px-2 pr-4 pt-3 pb-3'>
-            <p className='font-bold'>Double Stage Cake</p>
-            <p className=''>
-              <span className='bg-orange-500 text-white p-1 rounded-full'>$$$$</span>
-            </p>
-          </div>
-        </div>
-        <div className='border shadow-lg rounded-lg hover:scale-105 duration-300'>
-          <img src='https://images.pexels.com/photos/6133303/pexels-photo-6133303.jpeg?auto=compress&cs=tinysrgb&w=600' alt='/' className='w-full h-[200px] object-cover rounded-t-lg'/>
-          <div className='flex justify-between px-2 pr-4 pt-3 pb-3'>
-            <p className='font-bold'>Double Stage Cake</p>
-            <p className=''>
-              <span className='bg-orange-500 text-white p-1 rounded-full'>$$$$</span>
-            </p>
-          </div>
-        </div>
-        <div className='border shadow-lg rounded-lg hover:scale-105 duration-300'>
-          <img src='https://images.pexels.com/photos/6133303/pexels-photo-6133303.jpeg?auto=compress&cs=tinysrgb&w=600' alt='/' className='w-full h-[200px] object-cover rounded-t-lg'/>
-          <div className='flex justify-between px-2 pr-4 pt-3 pb-3'>
-            <p className='font-bold'>Double Stage Cake</p>
-            <p className=''>
-              <span className='bg-orange-500 text-white p-1 rounded-full'>$$$$</span>
-            </p>
-          </div>
-        </div>
-        <div className='border shadow-lg rounded-lg hover:scale-105 duration-300'>
-          <img src='https://images.pexels.com/photos/6133303/pexels-photo-6133303.jpeg?auto=compress&cs=tinysrgb&w=600' alt='/' className='w-full h-[200px] object-cover rounded-t-lg'/>
-          <div className='flex justify-between px-2 pr-4 pt-3 pb-3'>
-            <p className='font-bold'>Double Stage Cake</p>
-            <p className=''>
-              <span className='bg-orange-500 text-white p-1 rounded-full'>$$$$</span>
-            </p>
-          </div>
-        </div>
-        <div className='border shadow-lg rounded-lg hover:scale-105 duration-300'>
-          <img src='https://images.pexels.com/photos/6133303/pexels-photo-6133303.jpeg?auto=compress&cs=tinysrgb&w=600' alt='/' className='w-full h-[200px] object-cover rounded-t-lg'/>
-          <div className='flex justify-between px-2 pr-4 pt-3 pb-3'>
-            <p className='font-bold'>Double Stage Cake</p>
-            <p className=''>
-              <span className='bg-orange-500 text-white p-1 rounded-full'>$$$$</span>
-            </p>
-          </div>
-        </div>
-        <div className='border shadow-lg rounded-lg hover:scale-105 duration-300'>
-          <img src='https://images.pexels.com/photos/6133303/pexels-photo-6133303.jpeg?auto=compress&cs=tinysrgb&w=600' alt='/' className='w-full h-[200px] object-cover rounded-t-lg'/>
-          <div className='flex justify-between px-2 pr-4 pt-3 pb-3'>
-            <p className='font-bold'>Double Stage Cake</p>
-            <p className=''>
-              <span className='bg-orange-500 text-white p-1 rounded-full'>$$$$</span>
-            </p>
-          </div>
-        </div>
-        <div className='border shadow-lg rounded-lg hover:scale-105 duration-300'>
-          <img src='https://images.pexels.com/photos/6133303/pexels-photo-6133303.jpeg?auto=compress&cs=tinysrgb&w=600' alt='/' className='w-full h-[200px] object-cover rounded-t-lg'/>
-          <div className='flex justify-between px-2 pr-4 pt-3 pb-3'>
-            <p className='font-bold'>Double Stage Cake</p>
-            <p className=''>
-              <span className='bg-orange-500 text-white p-1 rounded-full'>$$$$</span>
-            </p>
-          </div>
-        </div>
+        </div></a>
       </div>
     </div>
     </>

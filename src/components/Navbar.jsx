@@ -4,17 +4,18 @@ import { BsFillCartFill, BsFillSaveFill} from 'react-icons/bs'
 import { TbTruckDelivery} from 'react-icons/tb'
 import { FaWallet, FaUserFriends } from 'react-icons/fa'
 import { MdFavorite, MdHelp } from 'react-icons/md'
+import { Link } from 'react-router-dom'
 const Navbar = () => {
     const [nav, setNav] = useState(false)
     return (
         <>
-        <div className='max-w-[1640px] max-auto m-auto flex justify-between items-center p-4 bg-blue-500'>
+        <div className='max-w-[1640px] max-auto m-auto flex justify-between items-center p-4 bg-blue-400'>
             <div className='flex items-center'>
                 <div onClick={()=> setNav(!nav)} className='cursor-pointer'>
                     <AiOutlineMenu size={30} />
                 </div>
                 <h1 className='text-2xl sm:text-3xl lg:text-4xl px-2 font-bold'>
-                    Food <span className='text-white'>Express</span>
+                   <a href='/'> Food <span className='text-white'>Express</span></a>
                 </h1>
                 <div className='hidden lg:flex items-center bg-gray-200 rounded-full p-1 text-[14px]'>
                     <p className='bg-black text-white rounded-full p-2'>Devilery</p>
@@ -27,9 +28,13 @@ const Navbar = () => {
 
             </div>
             {/* Cart Button */}
-            <button className='bg-orange-300 text-white hidden md:flex items-center py-2 rounded-full border-orange-300'>
+            <Link to="/cart">
+            <button className="bg-blue-500 flex hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+            <BsFillCartFill size={20} className='mr-2' />Cart
+    </button></Link>
+            {/* <button className='bg-orange-300 text-white hidden md:flex items-center py-2 rounded-full border-orange-300'>
                 <BsFillCartFill size={20} className='mr-2' />Cart
-            </button>
+            </button> */}
 
             {/* Overlay */}
             {/* Mobile Menu */}

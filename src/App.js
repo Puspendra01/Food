@@ -4,19 +4,22 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Footer from './components/Footer';
 import Help from './components/Help';
+import CartDetails from './components/Cart';
+import ProductDetails from './components/FoodDetails';
 function App() {
   return (
-    <>
-     <Navbar />
+    <>  
     <BrowserRouter>
+    <Navbar />
     <Routes>
      <Route path='/' element={<Home />}/>
      <Route path='/help' element={<Help />}/>
+     <Route path='/cart' element={<CartDetails />}/>
+     <Route path='/details' element={<ProductDetails />}/>
     </Routes>
-    </BrowserRouter>
-    <Footer /> 
+    <Footer />
+    </BrowserRouter>  
     </>    
   );
 }
-
 export default App;
